@@ -143,6 +143,9 @@ class DefaultEthereumMethods(
                     Chain.TESTNET_GOERLI == chain -> {
                         "\"5\""
                     }
+                    Chain.TESTNET_MUMBAI == chain -> {
+                        "\"80001\""
+                    }
                     else -> throw RpcException(-32602, "Invalid chain")
                 }
             }
@@ -171,6 +174,9 @@ class DefaultEthereumMethods(
                     }
                     Chain.TESTNET_GOERLI == chain -> {
                         "\"0x5\""
+                    }
+                    Chain.TESTNET_MUMBAI == chain -> {
+                        "\"0x13881\""
                     }
                     else -> throw RpcException(-32602, "Invalid chain")
                 }
